@@ -1,6 +1,32 @@
 # Intrusion-Detection-System
 This project is a Python-based Intrusion Detection System (IDS) designed to monitor and analyse network traffic in real-time. It leverages both anomaly-based detection (using machine learning) and signature-based detection (using predefined rules) to identify suspicious behaviour or potential security threats on a network.
 The system was built as an educational and functional demonstration of how real-world IDS systems can detect cyberattacks such as SYN flood, port scans, and anomalous traffic patterns. It’s ideal for students, cybersecurity enthusiasts, and researchers who want a hands-on understanding of IDS implementation.
+## Key Features
+•	Real-Time Packet Sniffing: Utilizes the scapy library to capture live packets from the network interface.
 
+•	Feature Extraction:
+Extracts key features from captured packets such as:
+
+•	Packet size
+
+•	Packet rate
+
+•	Byte rate
+
+•	TCP flags
+
+These features are essential for identifying patterns in normal vs. malicious traffic.
+
+•	Signature-Based Detection: Uses rule-based logic to detect known attack patterns like:
+
+•	SYN Flood Attacks: High volume of SYN packets without ACK.
+
+•	Port Scanning: Rapid requests to multiple ports with small packet sizes.
+
+•	Anomaly-Based Detection (Machine Learning): Implements the Isolation Forest algorithm to identify unknown or previously unseen attack patterns based on outlier detection in feature vectors.
+
+•	Threat Classification & Alerting: Each detected threat is categorized and logged with a confidence score. Alerts are saved in a .log file with timestamps for further analysis.
+
+•	Modular and Easy to Extend: The architecture is built in a modular way, making it easy to add new detection rules or enhance the machine learning model with more features or data.
 
 
