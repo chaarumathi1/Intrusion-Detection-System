@@ -28,5 +28,23 @@ These features are essential for identifying patterns in normal vs. malicious tr
 •	Threat Classification & Alerting: Each detected threat is categorized and logged with a confidence score. Alerts are saved in a .log file with timestamps for further analysis.
 
 •	Modular and Easy to Extend: The architecture is built in a modular way, making it easy to add new detection rules or enhance the machine learning model with more features or data.
+##  Technologies & Libraries Used
+•	Python 3
+
+•	Scapy – For packet sniffing and manipulation
+
+•	Scikit-learn – For anomaly detection (Isolation Forest)
+
+•	Numpy – For numerical processing
+
+•	Logging – For saving and formatting alert logs
+## Use Cases
+•	Educational purpose to understand how IDS systems work
+
+•	Baseline implementation for research projects in network security
+
+•	Small-scale internal network monitoring for detecting unusual traffic
+
+•	Foundation for further development of AI-driven IDS solutions
 
 
